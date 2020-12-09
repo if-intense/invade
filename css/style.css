@@ -1,0 +1,95 @@
+body {
+  font-family: 'Noto Serif JP', serif;
+}
+
+.container {
+  margin:4vh auto;
+}
+
+footer, footer.contact {
+  position:absolute;
+  bottom: 0;
+  width: 100%;
+  background-color: #f5f5f5;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+footer .container {
+  margin:0 auto;
+  padding:10px;
+}
+
+footer .container h4 {
+  font-size:0.9em;
+  font-weight:bold;
+}
+
+footer .container a {
+  font-size:0.7em;
+}
+.active {
+  text-decoration: underline;
+}
+
+
+footer .container .bottom p {
+  text-align:center;
+  font-size:0.7em;
+}
+
+footer .container .right {
+  text-align: right;
+}
+
+p.lead {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 21px;
+  color: #333333;
+  line-height: 1.4;
+  font-weight: 300;
+}
+
+span.badge {
+    display: inline-block;
+    padding: .25em .4em;
+    font-size: 75%;
+    margin-left:10px;
+    font-weight: 700;
+    background: #f36565;
+    color: #fdfdfd;
+    line-height: 1;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    border-radius: .25rem;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+/* Small devices (landscape phones, less than 768px)*/
+@media (max-width: 767.98px) {
+  footer {
+    position: relative;
+  }
+
+  footer .container, footer .container .right {
+    text-align: center;
+  }
+
+
+}
+
+
+@media (max-width: 575.98px) {
+  footer {
+    position:fixed;
+  }
+
+  footer.contact {
+    position: relative;
+  }
+
+  footer .column {
+    margin:2vh 0 0;
+  }
+}
